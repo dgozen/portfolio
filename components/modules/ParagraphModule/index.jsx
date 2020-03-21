@@ -1,10 +1,10 @@
 /* styles */
 import style from './index.scss';
 
-const ParagraphModule = ({ copy }) => {
+const ParagraphModule = ({ text }) => {
 	return (
 		<div className={style.root}>
-			<p>{copy}</p>
+			<p>{text}</p>
 		</div>
 	);
 };

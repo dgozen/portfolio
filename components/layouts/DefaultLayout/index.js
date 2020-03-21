@@ -5,9 +5,9 @@ import resets from './styleReset.scss';
 /* components */
 import Head from '../../common/Head';
 
-const DefaultLayout = (props) => {
-	const title = 'Hyper Island FED21';
-	const description = 'Kick-off template for FED21 students';
+const DefaultLayout = props => {
+	const title = 'Duygu Gözen';
+	const description = 'My Portfolio';
 
 	return (
 		<div className={(resets, style.root)}>
