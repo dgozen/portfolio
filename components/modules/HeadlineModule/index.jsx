@@ -1,4 +1,3 @@
-/* styles */
 import style from './index.scss';
 
 const HeadlineModule = ({ title }) => {

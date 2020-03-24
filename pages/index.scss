@@ -1,0 +1,34 @@
+@import 'components/main.scss';
+.gridContainer {
+	margin-top: -10vh;
+	padding: 5vw;
+	display: grid;
+	grid-template-columns: 40% 10% 60%;
+	grid-template-rows: repeat(3, 1fr);
+	transform: rotate(-20deg);
+}
+
+.styleCenter {
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 3;
+	text-align: center;
+	justify-self: center;
+}
+
+.styleRight {
+	text-align: right;
+	grid-row: 2 / span 1;
+	align-self: end;
+	// border-bottom: 15px solid $fix-blue;
+}
+
+.styleLeft {
+	text-align: left;
+	grid-column: 3 / span 1;
+	grid-row: 3 / span 1;
+	align-self: end;
+}
+
+hr {
+	border: 6px solid $fix-blue;
+}

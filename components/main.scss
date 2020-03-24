@@ -1,3 +1,9 @@
 $fix-background-color: #f38607;
-$fix-blue: #34688f;
+$fix-blue: #1b5989;
 $fix-black: #022422;
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: $fix-black;
+}

@@ -9,10 +9,10 @@ const DefaultLayout = props => {
 
 	return (
 		<div className={(resets, style.root)}>
-			<div className={style.pageWrapper}>
-				<Head title={title} description={description} />
-				{props.children}
-			</div>
+			{/* <div className={style.pageWrapper}> */}
+			<Head title={title} description={description} />
+			{props.children}
+			{/* </div> */}
 		</div>
 	);
 };
