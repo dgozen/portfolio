@@ -4,11 +4,16 @@ import ParagraphModule from '../components/modules/ParagraphModule';
 function fetchUrl(url) {
 	return fetch(url).then(r => r.json());
 }
-const About = () => {
+const About = ({ data }) => {
 	const { content } = data;
 	const codeString = JSON.stringify(content);
-	console.log(codeString);
-	return <p>test</p>;
+	const paragraphModuleData = content.body.find(
+		item => item.component === 'Paragraph Module'
+	);
+	console.log(paragraphModuleData);
+
+	//return <p>test</p>;
+	return <ParagraphModule text={paragraphModuleData.Text} />;
 };
 
 About.getInitialProps = async ({ query }) => {
