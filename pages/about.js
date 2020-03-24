@@ -12,7 +12,6 @@ const About = ({ data }) => {
 	);
 	console.log(paragraphModuleData);
 
-	//return <p>test</p>;
 	return <ParagraphModule text={paragraphModuleData.Text} />;
 };
 

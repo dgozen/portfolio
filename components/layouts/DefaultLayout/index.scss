@@ -1,9 +1,12 @@
+@import 'components/main.scss';
 .root {
 	h1 {
 		font-size: 32px;
 		font-family: 'Poppins', sans-serif;
-		color: blue;
+		color: $fix-blue;
 		padding-bottom: 18px;
+		writing-mode: vertical-lr;
+		text-orientation: upright;
 	}
 }
 

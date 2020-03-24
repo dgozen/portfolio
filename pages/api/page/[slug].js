@@ -1,11 +1,9 @@
-/* 🌈 Welcome to the server side, where all the fun happens! 🌈 */
-
+/* The server side, where all the fun happens! */
 /* dependencies */
 const StoryblokClient = require('storyblok-js-client');
 
-/* Initiating Storyblok client, so that we are 
-connected to our Storyblok account and space.
-Please replace this accessToken with your own one.*/
+/* Initiating Storyblok client, to be able to 
+connect to Storyblok account and space. */
 const Storyblok = new StoryblokClient({
 	accessToken: 'mp1Pg8gloFqbKzin0pUvHwtt',
 	cache: {
@@ -15,24 +13,15 @@ const Storyblok = new StoryblokClient({
 });
 
 export default async (req, res) => {
-	/* 
-	Here we are extracting the slug from the request,
-	so that we can later fetch the right data from Storyblok
-	*/
-
-	/* 
-	The assignment below is the same as:
-	const slug = req.query.slug
-	I am using an ES6 feature called Object Destructuring,
-	you can read up about it here: https://wesbos.com/destructuring-objects/
-	*/
-
+	/* First extract the slug from the request,
+	so that you can later fetch the right data from Storyblok
+	same as => const slug = req.query.slug	*/
 	const {
 		query: { slug }
 	} = req;
 
-	/* We are making a request to Storybloks API, using
-    the Storyblok Client that we've set up before */
+	/* Making a request to Storybloks API, using  the Storyblok Client
+	 thats set up before */
 	Storyblok.get(`cdn/stories/${slug}`, {})
 		.then(response => {
 			const {
