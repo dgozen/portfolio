@@ -14,21 +14,27 @@ and therefore the page request, e.g. your-site.com/about */
 const SlugPage = ({ data }) => {
 	const { content } = data;
 	const codeString = JSON.stringify(content);
+	// console.log(codeString);
 
 	const headlineModuleData = content.body.find(
 		item => item.component === 'Headline Module'
 	);
-	const paragraphModuleData = content.body.find(
-		item => item.component === 'Paragraph Module'
+	const paragraphModuleData = content.body.filter(item =>
+		item.component.includes('Paragraph Module')
 	);
-
 	return (
 		<DefaultLayout>
 			{headlineModuleData ? (
 				<HeadlineModule title={headlineModuleData.title} />
 			) : null}
 			{paragraphModuleData ? (
-				<ParagraphModule text={paragraphModuleData.Text} />
+				<ParagraphModule text={paragraphModuleData[0].Text} />
+			) : null}
+			{paragraphModuleData[1] ? (
+				<ParagraphModule text={paragraphModuleData[1].Text} />
+			) : null}
+			{paragraphModuleData[2] ? (
+				<ParagraphModule text={paragraphModuleData[2].Text} />
 			) : null}
 		</DefaultLayout>
 	);

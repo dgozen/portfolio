@@ -4,7 +4,7 @@ import ParagraphModule from '../components/modules/ParagraphModule/ParagraphModu
 function fetchUrl(url) {
 	return fetch(url).then(r => r.json());
 }
-const About = ({ data }) => {
+const Projects = ({ data }) => {
 	const { content } = data;
 	const codeString = JSON.stringify(content);
 	const paragraphModuleData = content.body.find(
@@ -15,10 +15,10 @@ const About = ({ data }) => {
 	return <ParagraphModule text={paragraphModuleData.Text} />;
 };
 
-About.getInitialProps = async ({ query }) => {
-	const { about } = query;
-	const data = await fetchUrl('http://localhost:3000/api/page/about');
+Projects.getInitialProps = async ({ query }) => {
+	const { projects } = query;
+	const data = await fetchUrl('http://localhost:3000/api/page/projects');
 	return { data };
 };
 
-export default About;
+export default Projects;
