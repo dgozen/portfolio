@@ -2,6 +2,15 @@ $fix-background-color: #f38607;
 $fix-blue: #1b5989;
 $fix-black: #022422;
 
+html,
+body {
+	margin: 0;
+	font-family: 'futura-pt', helvetica, san-serif;
+}
+* {
+	box-sizing: border-box;
+}
+
 a:link,
 a:visited {
 	text-decoration: none;

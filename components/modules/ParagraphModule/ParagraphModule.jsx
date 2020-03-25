@@ -1,8 +1,8 @@
-import style from './index.scss';
+import style from './ParagraphModule.scss';
 
 const ParagraphModule = ({ text }) => {
 	return (
-		<div className={style.root}>
+		<div>
 			<p>{text}</p>
 		</div>
 	);

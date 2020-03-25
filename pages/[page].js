@@ -1,9 +1,9 @@
 /* 🌈 This is the client side 🌈*/
 /* dependencies */
 import fetch from 'isomorphic-unfetch';
-import DefaultLayout from '../components/layouts/DefaultLayout';
-import ParagraphModule from '../components/modules/ParagraphModule';
-import HeadlineModule from '../components/modules/HeadlineModule';
+import DefaultLayout from '../components/layouts/DefaultLayout/DefaultLayout';
+import ParagraphModule from '../components/modules/ParagraphModule/ParagraphModule';
+import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
 /* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
 function fetchUrl(url) {
 	return fetch(url).then(r => r.json());

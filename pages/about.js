@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-unfetch';
-import ParagraphModule from '../components/modules/ParagraphModule';
+import ParagraphModule from '../components/modules/ParagraphModule/ParagraphModule';
 
 function fetchUrl(url) {
 	return fetch(url).then(r => r.json());

@@ -1,6 +1,5 @@
-import style from './index.scss';
+import style from './DefaultLayout.scss';
 import resets from './styleReset.scss';
-
 import Head from '../../common/Head';
 
 const DefaultLayout = props => {
