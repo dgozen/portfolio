@@ -22,6 +22,8 @@ const SlugPage = ({ data }) => {
 	const paragraphModuleData = content.body.filter(item =>
 		item.component.includes('Paragraph Module')
 	);
+	console.log(paragraphModuleData);
+
 	return (
 		<DefaultLayout>
 			{headlineModuleData ? (

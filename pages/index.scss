@@ -2,30 +2,33 @@
 
 .container {
 	display: grid;
-	grid-template-columns: auto auto 15%;
+	grid-template-columns: 1fr 1fr 15%;
 	grid-template-rows: 20% 60% auto;
 	width: 90%;
 	padding-top: 5vh;
 
 	hr {
-		border: 6px solid $fix-blue;
+		border: 6px solid $color-hr;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 	}
 
 	h1 {
 		font-size: 50px;
 		font-weight: bold;
-		color: $fix-blue;
+		color: $color-header;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
 	}
 
 	h2,
 	a {
 		font-weight: bold;
 		font-size: 40px;
-		color: $fix-black;
+		color: $color-paragraph;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 	}
 
 	a:hover {
-		color: rgb(34, 99, 121);
+		color: $color-hover;
 	}
 }
 
@@ -33,6 +36,7 @@
 	grid-column: 3 / span 1;
 	grid-row: 2 / span 2;
 	justify-self: right;
+	text-align: center;
 	writing-mode: vertical-lr;
 	text-orientation: upright;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
