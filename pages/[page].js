@@ -32,27 +32,24 @@ const SlugPage = ({ data }) => {
 			{headlineModuleData ? (
 				<HeadlineModule title={headlineModuleData.title} />
 			) : null}
-			{paragraphModuleData ? (
-				<ParagraphModule text={paragraphModuleData[0].Text} />
-			) : null}
-			{paragraphModuleData[1] ? (
-				<ParagraphModule text={paragraphModuleData[1].Text} />
-			) : null}
-			{paragraphModuleData[2] ? (
-				<ParagraphModule text={paragraphModuleData[2].Text} />
-			) : null}
-			{markupModuleData[0] ? (
-				<MarkupModule
-					text={markupModuleData[0].Markup.content[0].content[0].text}
-					href={markupModuleData[0].Markup.content[0].content[1].text}
-				/>
-			) : null}
-			{markupModuleData[1] ? (
-				<MarkupModule
-					text={markupModuleData[1].Markup.content[0].content[0].text}
-					href={markupModuleData[1].Markup.content[0].content[1].text}
-				/>
-			) : null}
+
+			{paragraphModuleData
+				? paragraphModuleData.map((module, index) => {
+						return <ParagraphModule key={index} text={module.Text} />;
+				  })
+				: null}
+
+			{markupModuleData
+				? markupModuleData.map((module, index) => {
+						return (
+							<MarkupModule
+								key={index}
+								text={module.Markup.content[0].content[0].text}
+								href={module.Markup.content[0].content[1].text}
+							/>
+						);
+				  })
+				: null}
 		</DefaultLayout>
 	);
 };

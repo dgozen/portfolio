@@ -1,0 +1,106 @@
+{
+	"story": {
+		"name": "contact",
+		"created_at": "2020-03-21T17:46:21.083Z",
+		"published_at": "2020-03-26T14:46:32.737Z",
+		"alternates": [],
+		"id": 9075274,
+		"uuid": "942f0ab8-6c9d-4bdd-b2c8-2ef68716ae22",
+		"content": {
+			"_uid": "41b53e56-d010-4654-882f-de64d5a0dcf7",
+			"body": [
+				{
+					"_uid": "ffc35399-8602-40bf-b57b-e889ab2cc624",
+					"title": "{ ... Contact ME! ... }",
+					"component": "Headline Module",
+					"_editable": "\u003c!--#storyblok#{\"name\": \"Headline Module\", \"space\": \"78713\", \"uid\": \"ffc35399-8602-40bf-b57b-e889ab2cc624\", \"id\": \"9075274\"}--\u003e"
+				},
+				{
+					"Text": "nazduyguakyol@gmail.com",
+					"_uid": "03bbe1f9-97d9-43f1-b47b-b56bff56047a",
+					"component": "Paragraph Module",
+					"_editable": "\u003c!--#storyblok#{\"name\": \"Paragraph Module\", \"space\": \"78713\", \"uid\": \"03bbe1f9-97d9-43f1-b47b-b56bff56047a\", \"id\": \"9075274\"}--\u003e"
+				},
+				{
+					"_uid": "1eb3d130-f0ea-4a22-81f5-f9ab431d35b9",
+					"Markup": {
+						"type": "doc",
+						"content": [
+							{
+								"type": "paragraph",
+								"content": [
+									{ "text": "LinkedIn: ", "type": "text" },
+									{
+										"text": "https://www.linkedin.com/in/duygu-gözen/",
+										"type": "text",
+										"marks": [
+											{
+												"type": "link",
+												"attrs": {
+													"href": "https://www.linkedin.com/in/duygu-g%C3%B6zen/",
+													"uuid": null,
+													"target": null,
+													"linktype": "story"
+												}
+											}
+										]
+									},
+									{ "text": " ", "type": "text" }
+								]
+							}
+						]
+					},
+					"component": "Markup Module",
+					"_editable": "\u003c!--#storyblok#{\"name\": \"Markup Module\", \"space\": \"78713\", \"uid\": \"1eb3d130-f0ea-4a22-81f5-f9ab431d35b9\", \"id\": \"9075274\"}--\u003e"
+				},
+				{
+					"_uid": "49160066-9754-4a36-a44b-1e7bb4767699",
+					"Markup": {
+						"type": "doc",
+						"content": [
+							{
+								"type": "paragraph",
+								"content": [
+									{ "text": "Instagram: ", "type": "text" },
+									{
+										"text": "https://www.instagram.com/nduyguakyol",
+										"type": "text",
+										"marks": [
+											{
+												"type": "link",
+												"attrs": {
+													"href": "https://www.instagram.com/nduyguakyol",
+													"uuid": null,
+													"target": null,
+													"linktype": "story"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					"component": "Markup Module",
+					"_editable": "\u003c!--#storyblok#{\"name\": \"Markup Module\", \"space\": \"78713\", \"uid\": \"49160066-9754-4a36-a44b-1e7bb4767699\", \"id\": \"9075274\"}--\u003e"
+				}
+			],
+			"component": "page",
+			"_editable": "\u003c!--#storyblok#{\"name\": \"page\", \"space\": \"78713\", \"uid\": \"41b53e56-d010-4654-882f-de64d5a0dcf7\", \"id\": \"9075274\"}--\u003e"
+		},
+		"slug": "contact",
+		"full_slug": "contact",
+		"sort_by_date": null,
+		"position": -824520,
+		"tag_list": [],
+		"is_startpage": false,
+		"parent_id": 0,
+		"meta_data": null,
+		"group_id": "2493e1f0-1274-43d6-9e0c-c473a0c971d3",
+		"first_published_at": "2020-03-21T16:46:25.000Z",
+		"release_id": null,
+		"lang": "default",
+		"path": null,
+		"translated_slugs": []
+	}
+}
