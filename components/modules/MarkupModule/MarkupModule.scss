@@ -1,0 +1,11 @@
+@import 'components/main.scss';
+.root {
+	font-size: 32px;
+	text-align: center;
+	a {
+		color: $color-hover;
+	}
+	a:hover {
+		color: $color-hr;
+	}
+}

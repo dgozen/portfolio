@@ -1,9 +1,9 @@
-/* 🌈 This is the client side 🌈*/
-/* dependencies */
+/*  client side */
 import fetch from 'isomorphic-unfetch';
 import DefaultLayout from '../components/layouts/DefaultLayout/DefaultLayout';
 import ParagraphModule from '../components/modules/ParagraphModule/ParagraphModule';
 import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
+import MarkupModule from '../components/modules/MarkupModule/MarkupModule';
 /* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
 function fetchUrl(url) {
 	return fetch(url).then(r => r.json());
@@ -22,7 +22,10 @@ const SlugPage = ({ data }) => {
 	const paragraphModuleData = content.body.filter(item =>
 		item.component.includes('Paragraph Module')
 	);
-	console.log(paragraphModuleData);
+
+	const markupModuleData = content.body.filter(item =>
+		item.component.includes('Markup Module')
+	);
 
 	return (
 		<DefaultLayout>
@@ -37,6 +40,18 @@ const SlugPage = ({ data }) => {
 			) : null}
 			{paragraphModuleData[2] ? (
 				<ParagraphModule text={paragraphModuleData[2].Text} />
+			) : null}
+			{markupModuleData[0] ? (
+				<MarkupModule
+					text={markupModuleData[0].Markup.content[0].content[0].text}
+					href={markupModuleData[0].Markup.content[0].content[1].text}
+				/>
+			) : null}
+			{markupModuleData[1] ? (
+				<MarkupModule
+					text={markupModuleData[1].Markup.content[0].content[0].text}
+					href={markupModuleData[1].Markup.content[0].content[1].text}
+				/>
 			) : null}
 		</DefaultLayout>
 	);
