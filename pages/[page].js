@@ -14,7 +14,6 @@ and therefore the page request, e.g. your-site.com/about */
 const SlugPage = ({ data }) => {
 	const { content } = data;
 	const codeString = JSON.stringify(content);
-	// console.log(codeString);
 
 	const headlineModuleData = content.body.find(
 		item => item.component === 'Headline Module'
