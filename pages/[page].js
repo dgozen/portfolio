@@ -4,6 +4,7 @@ import DefaultLayout from '../components/layouts/DefaultLayout/DefaultLayout';
 import ParagraphModule from '../components/modules/ParagraphModule/ParagraphModule';
 import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
 import MarkupModule from '../components/modules/MarkupModule/MarkupModule';
+import ImageModule from '../components/modules/ImageModule/ImageModule';
 /* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
 function fetchUrl(url) {
 	return fetch(url).then(r => r.json());
@@ -25,9 +26,18 @@ const SlugPage = ({ data }) => {
 	const markupModuleData = content.body.filter(item =>
 		item.component.includes('Markup Module')
 	);
+	const imageModuleData = content.body.find(item => item.component === 'Image');
+	console.log(imageModuleData);
 
 	return (
 		<DefaultLayout>
+			{imageModuleData ? (
+				<ImageModule
+					image={imageModuleData.Image}
+					text={imageModuleData.Text}
+				/>
+			) : null}
+
 			{headlineModuleData ? (
 				<HeadlineModule title={headlineModuleData.title} />
 			) : null}

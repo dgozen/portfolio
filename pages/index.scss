@@ -9,29 +9,9 @@
 
 	hr {
 		border: 6px solid $color-hr;
-		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-	}
-
-	h1 {
-		font-size: 50px;
-		font-weight: bold;
-		color: $color-header;
-		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
-	}
-
-	h2,
-	a {
-		font-weight: bold;
-		font-size: 40px;
-		color: $color-paragraph;
-		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
-	}
-
-	a:hover {
-		color: $color-hover;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 	}
 }
-
 .styleName {
 	grid-column: 3 / span 1;
 	grid-row: 2 / span 2;

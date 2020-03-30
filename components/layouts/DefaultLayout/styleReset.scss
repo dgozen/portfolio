@@ -4,6 +4,13 @@
    v2.0 | 20110126
    License: none (public domain)
   */
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+
 html,
 body,
 div,
@@ -91,7 +98,6 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	background-color: $color-background;
 }
 /* HTML5 display-role reset for older browsers */
 article,

@@ -4,6 +4,20 @@ $color-paragraph: #cb86b2;
 $color-hover: #ea4c89;
 $color-hr: #892bb8;
 
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	background: linear-gradient(
+		133deg,
+		rgba(43, 7, 61, 1) 48%,
+		rgba(94, 0, 255, 1) 100%
+	);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 html,
 body {
 	margin: 0;
@@ -11,15 +25,13 @@ body {
 }
 * {
 	box-sizing: border-box;
-	background-color: $color-background;
 }
 
 li {
 	list-style: none;
 }
 
-a:link,
-a:visited {
+a:link {
 	text-decoration: none;
 	color: $color-paragraph;
 }
