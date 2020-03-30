@@ -1,5 +1,4 @@
 import style from './index.scss';
-import DefaultLayout from '../components/layouts/DefaultLayout/DefaultLayout';
 
 const DefaultPage = () => {
 	return (
