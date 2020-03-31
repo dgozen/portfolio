@@ -4,8 +4,8 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 15%;
 	grid-template-rows: 20% 60% auto;
-	width: 90%;
 	padding-top: 5vh;
+	padding-right: 5vh;
 
 	hr {
 		border: 6px solid $color-hr;
@@ -20,12 +20,14 @@
 	writing-mode: vertical-lr;
 	text-orientation: upright;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+	margin: 0;
 }
 
 .styleLabel {
 	text-align: right;
 	grid-column: 1 / span 3;
 	grid-row: 1 / span 1;
+	margin-bottom: 0;
 }
 
 .stylePages {

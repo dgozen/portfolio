@@ -4,12 +4,14 @@ a {
 	font-weight: bold;
 	font-size: 40px;
 	color: $color-paragraph;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+	margin: 0;
 }
 
 p {
 	font-size: 32px;
 	color: $color-paragraph;
+	margin: 0;
 }
 
 a:hover {
