@@ -12,35 +12,27 @@ const Projects = ({ data }) => {
 	// const codeString = JSON.stringify(content);
 
 	const headlineModuleData = content.body.find(
-		item => item.component === 'Headline Module'
-	);
-	const paragraphModuleData = content.body.filter(item =>
-		item.component.includes('Paragraph Module')
+		item => item.component === 'Headline'
 	);
 
-	const imageModuleData = content.body.filter(image =>
-		image.component.includes('Image')
+	const projectsGalleryData = content.body.filter(modules =>
+		modules.component.includes('Module')
 	);
-	console.log(imageModuleData);
+
+	const modulePrintHandler = projectsGalleryData => {
+		return projectsGalleryData.map((module, index) => {
+			return index % 2 == 0 ? (
+				<ImageModule key={index} image={module.Image} text={module.Text} />
+			) : (
+				<ParagraphModule key={index} text={module.Text} />
+			);
+		});
+	};
+
 	return (
 		<GalleryLayout>
-			{headlineModuleData ? (
-				<HeadlineModule title={headlineModuleData.title} />
-			) : null}
-
-			{imageModuleData
-				? imageModuleData.map((image, index) => {
-						return (
-							<ImageModule key={index} image={image.Image} text={image.Text} />
-						);
-				  })
-				: null}
-
-			{paragraphModuleData
-				? paragraphModuleData.map((module, index) => {
-						return <ParagraphModule key={index} text={module.Text} />;
-				  })
-				: null}
+			<HeadlineModule title={headlineModuleData.title} />
+			{modulePrintHandler(projectsGalleryData)}
 		</GalleryLayout>
 	);
 };

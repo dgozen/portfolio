@@ -17,7 +17,7 @@ const SlugPage = ({ data }) => {
 	const codeString = JSON.stringify(content);
 
 	const headlineModuleData = content.body.find(
-		item => item.component === 'Headline Module'
+		item => item.component === 'Headline'
 	);
 	const paragraphModuleData = content.body.filter(item =>
 		item.component.includes('Paragraph Module')
