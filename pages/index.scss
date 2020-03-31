@@ -52,6 +52,11 @@
 	}
 	.stylePages {
 		align-self: end;
+		margin-top: 5vh;
+	}
+
+	.styleName {
+		text-orientation: initial;
 	}
 
 	.hidden {
@@ -61,11 +66,14 @@
 
 @media only screen and (min-width: 700px) {
 	.styleLabel {
-		padding-left: 15vw;
+		padding-left: 10vw;
+	}
+	.styleName {
+		text-orientation: initial;
 	}
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
 	.hidden {
 		display: block;
 	}
@@ -83,6 +91,7 @@
 		grid-row: 1 / span 3;
 		justify-self: center;
 		align-self: end;
+		text-orientation: upright;
 	}
 
 	.styleLabel {
@@ -90,6 +99,7 @@
 		grid-column: 1 / span 1;
 		padding: 0;
 		align-self: flex-start;
+		padding-right: 2vw;
 	}
 
 	.stylePages {
