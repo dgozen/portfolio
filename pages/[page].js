@@ -24,10 +24,9 @@ const SlugPage = ({ data }) => {
 	);
 
 	const markupModuleData = content.body.filter(item =>
-		item.component.includes('Markup Module')
+		item.component.includes('Markup')
 	);
 	const imageModuleData = content.body.find(item => item.component === 'Image');
-	console.log(imageModuleData);
 
 	return (
 		<DefaultLayout>
