@@ -1,8 +1,12 @@
 import style from './index.scss';
+import Head from '../components/common/Head/index';
 
 const DefaultPage = () => {
+	const title = 'Duygu Gözen';
+	const description = 'My Portfolio';
 	return (
 		<div className={style.container}>
+			<Head title={title} description={description} />
 			<div className={style.styleLabel}>
 				<h2>FRONTEND DEVELOPMENT by</h2>
 				<hr className={style.hidden} />

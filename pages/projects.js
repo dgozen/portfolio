@@ -2,6 +2,7 @@ import fetch from 'isomorphic-unfetch';
 import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
 import ParagraphModule from '../components/modules/ParagraphModule/ParagraphModule';
 import ImageModule from '../components/modules/ImageModule/ImageModule';
+import GalleryLayout from '../components/layouts/GalleryLayout/GalleryLayout';
 
 function fetchUrl(url) {
 	return fetch(url).then(r => r.json());
@@ -22,16 +23,10 @@ const Projects = ({ data }) => {
 	);
 	console.log(imageModuleData);
 	return (
-		<div>
+		<GalleryLayout>
 			{headlineModuleData ? (
 				<HeadlineModule title={headlineModuleData.title} />
 			) : null}
-
-			{paragraphModuleData
-				? paragraphModuleData.map((module, index) => {
-						return <ParagraphModule key={index} text={module.Text} />;
-				  })
-				: null}
 
 			{imageModuleData
 				? imageModuleData.map((image, index) => {
@@ -40,7 +35,13 @@ const Projects = ({ data }) => {
 						);
 				  })
 				: null}
-		</div>
+
+			{paragraphModuleData
+				? paragraphModuleData.map((module, index) => {
+						return <ParagraphModule key={index} text={module.Text} />;
+				  })
+				: null}
+		</GalleryLayout>
 	);
 };
 

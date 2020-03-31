@@ -1,17 +1,16 @@
-import style from './DefaultLayout.scss';
-import resets from './styleReset.scss';
+import style from './GalleryLayout.scss';
 import Head from '../../common/Head';
 
-const DefaultLayout = props => {
+const GalleryLayout = props => {
 	const title = 'Duygu Gözen';
 	const description = 'My Portfolio';
 
 	return (
-		<div className={(resets, style.root)}>
+		<div className={style.galleryContainer}>
 			<Head title={title} description={description} />
 			{props.children}
 		</div>
 	);
 };
 
-export default DefaultLayout;
+export default GalleryLayout;
