@@ -3,9 +3,10 @@
 	font-size: 32px;
 	text-align: center;
 	a {
-		color: $color-hover;
+		color: $color-hr;
+		text-shadow: none;
 	}
 	a:hover {
-		color: $color-hr;
+		color: $color-hover;
 	}
 }

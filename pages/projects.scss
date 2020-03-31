@@ -1,4 +1,10 @@
 @import 'components/main.scss';
+.header {
+	h1 {
+		font-size: 50px;
+		margin: 5vh;
+	}
+}
 .projectsContainer {
 	display: flex;
 	flex-direction: column;
@@ -6,33 +12,86 @@
 	align-items: center;
 	align-content: space-around;
 	margin: 0 auto;
-	padding-top: 5vh;
-
-	h1 {
-		font-size: 50px;
-	}
+	width: 90%;
 
 	img {
 		-webkit-box-shadow: 6px 7px 18px 0px rgba(94, 89, 89, 1);
 		-moz-box-shadow: 6px 7px 18px 0px rgba(94, 89, 89, 1);
 		box-shadow: 6px 7px 18px 0px rgba(94, 89, 89, 1);
-		border-radius: 15px;
-		margin-top: 5vh;
+		border-radius: 20px;
+		margin: 5vh;
+		height: 200px;
 	}
+
+	img:first-of-type {
+		height: 300px;
+	}
+
 	p {
-		font-size: 20px;
+		font-size: 22px;
 		margin: 0;
 		padding: 2vw;
 		text-align: center;
 	}
 
 	a {
-		font-size: 20px;
+		font-size: 22px;
 		color: $color-header;
 		text-shadow: none;
 	}
 
 	a:hover {
 		color: $color-hover;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.projectsContainer {
+		img {
+			height: 250px;
+		}
+		img:first-of-type {
+			height: 350px;
+		}
+	}
+}
+
+@media only screen and (min-width: 720px) {
+	.projectsContainer {
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-template-columns: 60% auto;
+		justify-items: center;
+		justify-content: center;
+
+		p {
+			text-align: left;
+		}
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	.header {
+		h1 {
+			font-size: 60px;
+		}
+	}
+	.projectsContainer {
+		width: 85%;
+		p {
+			font-size: 35px;
+		}
+
+		a {
+			font-size: 35px;
+		}
+
+		img {
+			height: 460px;
+			border-radius: 32px;
+		}
+		img:first-of-type {
+			height: 500px;
+		}
 	}
 }
