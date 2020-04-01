@@ -55,7 +55,8 @@ const Projects = ({ data }) => {
 					text={imageModuleData[1].Text}
 				/>
 				<p>
-					A small jump scare game built on JavaScript. You can play it live{' '}
+					A small jump scare game built on JavaScript. You can play it live on
+					your desktop{' '}
 					<a target='_blank' href='https://mazewoman.netlify.com/'>
 						{' '}
 						here
@@ -66,6 +67,14 @@ const Projects = ({ data }) => {
 						GitHub
 					</a>
 					.
+				</p>
+				<ImageModule
+					image={imageModuleData[1].Image}
+					text={imageModuleData[1].Text}
+				/>
+				<p>
+					A design system made for WWT's (We Were There) landing page to help
+					deliever message and increase conversionrate.
 				</p>
 			</div>
 		</div>
