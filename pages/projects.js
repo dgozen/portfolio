@@ -73,7 +73,7 @@ const Projects = ({ data }) => {
 					text={imageModuleData[2].Text}
 				/>
 				<p>
-					A design system made for WWT's (We Were There) landing page to help
+					A design system created for WWT's (We Were There) landing page to help
 					deliever message and increase conversion rate.
 				</p>
 			</div>
