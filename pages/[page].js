@@ -72,9 +72,7 @@ SlugPage.getInitialProps = async ({ query }) => {
 	const { page } = query;
 	/* Calling internal api endpoint to fetch Storyblok content server-side 
 	(client-side here) */
-	const data = await fetchUrl(
-		`https://duygu-portfolio-bvtp2j4jk.now.sh//api/page/${page}`
-	);
+	const data = await fetchUrl(`https://duygu-gozen.now.sh//api/page/${page}`);
 	/* Returning the data back into SlugPage as props */
 	return { data }; /* This is the same as { data: data } */
 };
