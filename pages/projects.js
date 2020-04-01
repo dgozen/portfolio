@@ -74,7 +74,7 @@ const Projects = ({ data }) => {
 				/>
 				<p>
 					A design system created for WWT's (We Were There) landing page to help
-					deliever message and increase conversion rate.
+					deliever their message and increase conversion rate.
 				</p>
 			</div>
 		</div>
