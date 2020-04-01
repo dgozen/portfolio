@@ -1,12 +1,24 @@
 @import 'components/main.scss';
 .root {
-	font-size: 32px;
-	text-align: center;
+	p,
+	a {
+		font-weight: bold;
+		font-size: 20px;
+		color: $color-paragraph;
+		padding: 2vw;
+	}
 	a {
 		color: $color-hr;
 		text-shadow: none;
 	}
 	a:hover {
 		color: $color-hover;
+	}
+}
+
+@media only screen and (min-width: 301px) {
+	p,
+	a {
+		font-size: 35px;
 	}
 }
