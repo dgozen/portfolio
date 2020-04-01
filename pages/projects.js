@@ -9,7 +9,7 @@ function fetchUrl(url) {
 }
 const Projects = ({ data }) => {
 	const { content } = data;
-	// const codeString = JSON.stringify(content);
+
 	const title = 'Duygu Gözen';
 	const description = 'My Portfolio';
 	const headlineModuleData = content.body.find(
