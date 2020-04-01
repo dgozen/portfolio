@@ -7,7 +7,7 @@ $color-hr: #f9423a;
 html,
 body {
 	margin: 0;
-	font-family: 'futura-pt', helvetica, san-serif;
+	font-family: helvetica, san-serif;
 	letter-spacing: 0.1rem;
 }
 * {
@@ -20,5 +20,4 @@ li {
 
 a:link {
 	text-decoration: none;
-	color: $color-paragraph;
 }
