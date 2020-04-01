@@ -74,7 +74,9 @@ const Projects = ({ data }) => {
 
 Projects.getInitialProps = async ({ query }) => {
 	const { projects } = query;
-	const data = await fetchUrl('http://localhost:3000/api/page/projects');
+	const data = await fetchUrl(
+		'https://duygu-portfolio-bvtp2j4jk.now.sh//api/page/projects'
+	);
 	return { data };
 };
 
