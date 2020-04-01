@@ -5,7 +5,7 @@ const StoryblokClient = require('storyblok-js-client');
 /* Initiating Storyblok client, to be able to 
 connect to Storyblok account and space. */
 const Storyblok = new StoryblokClient({
-	accessToken: ' QF5y4KKOnKp6rbQGmM1TYQtt ',
+	accessToken: 'QF5y4KKOnKp6rbQGmM1TYQtt',
 	cache: {
 		clear: 'auto',
 		type: 'memory'
