@@ -1,11 +1,7 @@
 import style from './ParagraphModule.scss';
 
 const ParagraphModule = ({ text }) => {
-	return (
-		<div>
-			<p>{text}</p>
-		</div>
-	);
+	return <p>{text}</p>;
 };
 
 export default ParagraphModule;

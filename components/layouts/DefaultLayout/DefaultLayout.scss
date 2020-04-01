@@ -4,21 +4,23 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	flex-wrap: wrap;
 	margin: 0 auto;
-	padding-top: 25vh;
+	padding-top: 20vh;
+	width: 80%;
 
 	h1 {
 		font-size: 50px;
 		font-weight: bold;
 		color: $color-header;
 		padding-bottom: 5vh;
+		margin-top: 5vh;
 	}
-
-	p,
 	a {
-		font-weight: bold;
-		font-size: 25px;
+		color: $color-hr;
+	}
+	p {
 		color: $color-paragraph;
 		padding: 2vw;
 	}
@@ -26,5 +28,23 @@
 		border-radius: 50%;
 		margin-top: -10vh;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.root {
+		p,
+		a {
+			font-size: 22px;
+		}
+	}
+}
+
+@media only screen and (min-width: 301px) {
+	.root {
+		p,
+		a {
+			font-size: 32px;
+		}
 	}
 }

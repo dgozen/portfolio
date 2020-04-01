@@ -1,11 +1,18 @@
 @import 'components/main.scss';
 .root {
-	p,
+	h2,
 	a {
 		font-weight: bold;
-		font-size: 20px;
+		font-size: 40px;
 		color: $color-paragraph;
-		padding: 2vw;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+		margin: 0;
+	}
+
+	p {
+		font-size: 32px;
+		color: $color-paragraph;
+		margin: 0;
 	}
 	a {
 		color: $color-hr;
@@ -14,11 +21,16 @@
 	a:hover {
 		color: $color-hover;
 	}
-}
-
-@media only screen and (min-width: 301px) {
-	p,
-	a {
-		font-size: 35px;
+	a:hover {
+		color: $color-hover;
 	}
 }
+
+// .root {
+// 	p,
+// 	a {
+// 		color: $color-paragraph;
+// 		padding: 2vw;
+// 	}
+
+// }
