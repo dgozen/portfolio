@@ -69,12 +69,12 @@ const Projects = ({ data }) => {
 					.
 				</p>
 				<ImageModule
-					image={imageModuleData[1].Image}
-					text={imageModuleData[1].Text}
+					image={imageModuleData[2].Image}
+					text={imageModuleData[2].Text}
 				/>
 				<p>
 					A design system made for WWT's (We Were There) landing page to help
-					deliever message and increase conversionrate.
+					deliever message and increase conversion rate.
 				</p>
 			</div>
 		</div>
