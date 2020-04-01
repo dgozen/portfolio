@@ -74,7 +74,7 @@ const Projects = ({ data }) => {
 
 Projects.getInitialProps = async ({ query }) => {
 	const { projects } = query;
-	const data = await fetchUrl('https://duygu-gozen.now.sh//api/page/projects');
+	const data = await fetchUrl('https://duygu-gozen.now.sh/api/page/projects');
 	return { data };
 };
 
