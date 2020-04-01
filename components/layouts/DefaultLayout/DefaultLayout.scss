@@ -4,11 +4,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
-	flex-wrap: wrap;
 	margin: 0 auto;
 	padding-top: 20vh;
-	width: 80%;
 
 	h1 {
 		font-size: 50px;
@@ -16,6 +13,7 @@
 		color: $color-header;
 		padding-bottom: 5vh;
 		margin-top: 5vh;
+		align-self: center;
 	}
 	a {
 		color: $color-hr;
@@ -31,16 +29,16 @@
 	}
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
 	.root {
 		p,
 		a {
-			font-size: 22px;
+			font-size: 19px;
 		}
 	}
 }
 
-@media only screen and (min-width: 301px) {
+@media only screen and (min-width: 501px) {
 	.root {
 		p,
 		a {
