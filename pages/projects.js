@@ -43,12 +43,12 @@ const Projects = ({ data }) => {
 						{' '}
 						GitHub.{' '}
 					</a>
-					Here is the live link to the{' '}
+					Here is the
 					<a target='_blank' href='https://gymappremake.netlify.com'>
 						{' '}
-						mobile{' '}
+						live link{' '}
 					</a>
-					prototype.
+					to the prototype.
 				</p>
 				<ImageModule
 					image={imageModuleData[1].Image}
@@ -61,8 +61,8 @@ const Projects = ({ data }) => {
 						{' '}
 						here
 					</a>{' '}
-					or take a look at the code in{' '}
-					<a target='_blank' href='https://mazewoman.netlify.com/'>
+					or take a look at the code in
+					<a target='_blank' href='https://github.com/dgozen/mazeWoman'>
 						{' '}
 						GitHub
 					</a>
@@ -75,6 +75,14 @@ const Projects = ({ data }) => {
 				<p>
 					A design system created for WWT's (We Were There) landing page to help
 					deliever their message and increase conversion rate.
+				</p>
+				<ImageModule
+					image={imageModuleData[3].Image}
+					text={imageModuleData[3].Text}
+				/>
+				<p>
+					This web site's technology uses a headless CMS system from Storyblok
+					and Next.js to deploy.
 				</p>
 			</div>
 		</div>
