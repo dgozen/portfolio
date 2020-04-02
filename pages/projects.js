@@ -81,7 +81,7 @@ const Projects = ({ data }) => {
 					text={imageModuleData[3].Text}
 				/>
 				<p>
-					This web site's technology uses a headless CMS system from Storyblok
+					This website's technology uses a headless CMS system from Storyblok
 					and Next.js.
 				</p>
 			</div>
