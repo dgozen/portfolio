@@ -82,7 +82,7 @@ const Projects = ({ data }) => {
 				/>
 				<p>
 					This web site's technology uses a headless CMS system from Storyblok
-					and Next.js to deploy.
+					and Next.js.
 				</p>
 			</div>
 		</div>
