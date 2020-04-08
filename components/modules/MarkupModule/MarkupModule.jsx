@@ -4,7 +4,7 @@ const MarkupModule = ({ text, href }) => {
 	return (
 		<p className={style.root}>
 			{text}{' '}
-			<a target='_blank' href={href}>
+			<a target='_blank' href='https://{href}'>
 				{href}
 			</a>
 		</p>
