@@ -5,7 +5,7 @@ import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule'
 import ImageModule from '../components/modules/ImageModule/ImageModule';
 
 function fetchUrl(url) {
-	return fetch(url).then(r => r.json());
+	return fetch(url).then((r) => r.json());
 }
 const Projects = ({ data }) => {
 	const { content } = data;
@@ -13,16 +13,19 @@ const Projects = ({ data }) => {
 	const title = 'Duygu Gözen';
 	const description = 'My Portfolio';
 	const headlineModuleData = content.body.find(
-		item => item.component === 'Headline'
+		(item) => item.component === 'Headline'
 	);
-	const imageModuleData = content.body.filter(item =>
+	const imageModuleData = content.body.filter((item) =>
 		item.component.includes('Image')
 	);
 
 	return (
 		<div className={style.header}>
 			<Head title={title} description={description} />
-			<HeadlineModule title={headlineModuleData.title} />
+			<HeadlineModule
+				className={style.textShadow}
+				title={headlineModuleData.title}
+			/>
 			<div className={style.projectsContainer}>
 				<ImageModule
 					image={imageModuleData[0].Image}
