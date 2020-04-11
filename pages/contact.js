@@ -2,8 +2,9 @@ import style from './index.scss';
 import Head from '../components/common/Head/index';
 import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
 import DefaultLayout from '../components/layouts/DefaultLayout/DefaultLayout';
+import style from './contact.scss';
 
-const contact = () => {
+const Contact = () => {
 	const title = 'Duygu Gözen';
 	const description = 'My Portfolio';
 	return (
@@ -14,14 +15,22 @@ const contact = () => {
 				title='{... Contact Me ...}'
 			/>
 			<p>nazduyguakyol@gmail.com</p>
-			<a target='_blank' href='https://www.linkedin.com/in/duygu-g%C3%B6zen/'>
+			<a
+				className={style.noshadow}
+				target='_blank'
+				href='https://www.linkedin.com/in/duygu-g%C3%B6zen/'
+			>
 				LinkedIn
 			</a>
-			<a target='_blank' href='https://www.instagram.com/nduyguakyol/'>
+			<a
+				className={style.noshadow}
+				target='_blank'
+				href='https://www.instagram.com/nduyguakyol/'
+			>
 				Instagram
 			</a>
 		</DefaultLayout>
 	);
 };
 
-export default contact;
+export default Contact;
