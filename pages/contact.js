@@ -1,8 +1,7 @@
-import style from './index.scss';
+import style from './contact.scss';
 import Head from '../components/common/Head/index';
 import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
 import DefaultLayout from '../components/layouts/DefaultLayout/DefaultLayout';
-import style from './contact.scss';
 
 const Contact = () => {
 	const title = 'Duygu Gözen';
