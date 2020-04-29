@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport style from './ParagraphModule.scss';\n\nconst ParagraphModule = ({\n  text\n}) => {\n  return __jsx(\"div\", null, __jsx(\"p\", null, text));\n};\n\nexport default ParagraphModule;","map":null,"metadata":{},"sourceType":"module"}

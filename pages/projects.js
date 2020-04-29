@@ -32,9 +32,9 @@ const Projects = ({ data }) => {
 					text={imageModuleData[0].Text}
 				/>
 				<p>
-					An accessible gym web app built on React.js. UI was designed for motor
-					function disabilities and dyslexia. Screen readers can easily
-					navigate. You can find the full design details on{' '}
+					An accessible gym web app built on React.js for mobile display. UI was
+					designed for motor function disabilities and dyslexia. Screen readers
+					can easily navigate. You can find the full design details on{' '}
 					<a
 						target='_blank'
 						href='https://www.figma.com/file/tc4FJrHbhwDBtX8Y1SwWV7/Friskis-and-Svettis?node-id=0%3A1'

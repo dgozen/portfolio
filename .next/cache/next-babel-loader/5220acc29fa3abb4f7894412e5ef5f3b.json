@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\n\nconst ImageModule = ({\n  image,\n  text\n}) => {\n  return __jsx(\"img\", {\n    src: image,\n    alt: text\n  });\n};\n\nexport default ImageModule;","map":null,"metadata":{},"sourceType":"module"}

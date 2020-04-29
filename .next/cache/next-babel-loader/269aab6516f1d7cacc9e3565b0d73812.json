@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport style from './HeadlineModule.scss';\n\nvar HeadlineModule = function HeadlineModule(_ref) {\n  var title = _ref.title;\n  return __jsx(\"h1\", {\n    className: style.root\n  }, title);\n};\n\nexport default HeadlineModule;","map":null,"metadata":{},"sourceType":"module"}
