@@ -32,6 +32,22 @@ const Projects = ({ data }) => {
 					text={imageModuleData[0].Text}
 				/>
 				<p>
+					An innovative timeline feature for Global Resilience Partnerships new
+					website. You can see the live desktop version{' '}
+					<a target='_blank' href='https://grp-timeline.now.sh/'>
+						here
+					</a>{' '}
+					and the code base on
+					<a target='_blank' href='https://github.com/dgozen/GRPtimeline'>
+						{' '}
+						GitHub.{' '}
+					</a>
+				</p>
+				<ImageModule
+					image={imageModuleData[0].Image}
+					text={imageModuleData[0].Text}
+				/>
+				<p>
 					An accessible gym web app built on React.js for mobile display. UI was
 					designed for motor function disabilities and dyslexia. Screen readers
 					can easily navigate. You can find the full design details on{' '}
