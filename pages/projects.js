@@ -42,7 +42,7 @@ const Projects = ({ data }) => {
 						{' '}
 						GitHub.{' '}
 					</a>
-					This project was built using React.js.
+					This project was built by using React.js.
 				</p>
 				<ImageModule
 					image={imageModuleData[1].Image}
