@@ -32,7 +32,7 @@ const Projects = ({ data }) => {
 					text={imageModuleData[0].Text}
 				/>
 				<p>
-					An innovative timeline feature for Global Resilience Partnerships new
+					An innovative timeline feature for Global Resilience Partnership's new
 					website. You can see the live desktop version{' '}
 					<a target='_blank' href='https://grp-timeline.now.sh/'>
 						here
@@ -42,10 +42,11 @@ const Projects = ({ data }) => {
 						{' '}
 						GitHub.{' '}
 					</a>
+					This project was built using React.js.
 				</p>
 				<ImageModule
-					image={imageModuleData[0].Image}
-					text={imageModuleData[0].Text}
+					image={imageModuleData[1].Image}
+					text={imageModuleData[1].Text}
 				/>
 				<p>
 					An accessible gym web app built on React.js for mobile display. UI was
@@ -70,8 +71,8 @@ const Projects = ({ data }) => {
 					to the prototype.
 				</p>
 				<ImageModule
-					image={imageModuleData[1].Image}
-					text={imageModuleData[1].Text}
+					image={imageModuleData[2].Image}
+					text={imageModuleData[2].Text}
 				/>
 				<p>
 					A small jump scare game built on JavaScript. You can play it live on
@@ -88,16 +89,16 @@ const Projects = ({ data }) => {
 					.
 				</p>
 				<ImageModule
-					image={imageModuleData[2].Image}
-					text={imageModuleData[2].Text}
+					image={imageModuleData[3].Image}
+					text={imageModuleData[3].Text}
 				/>
 				<p>
 					A design system created for WWT's (We Were There) landing page to help
 					deliever their message and increase conversion rate.
 				</p>
 				<ImageModule
-					image={imageModuleData[3].Image}
-					text={imageModuleData[3].Text}
+					image={imageModuleData[4].Image}
+					text={imageModuleData[4].Text}
 				/>
 				<p>
 					This website's technology uses a headless CMS system from Storyblok
