@@ -58,8 +58,8 @@ const Projects = ({ data }) => {
 					text={imageModuleData[0].Text}
 				/>
 				<p>
-					An innovative timeline feature for Global Resilience Partnership's new
-					website. You can see the live desktop version{' '}
+					An innovative timeline feature created for Global Resilience
+					Partnership's new website. You can see the live desktop version{' '}
 					<a target='_blank' href='https://grp-timeline.now.sh/'>
 						here
 					</a>{' '}
