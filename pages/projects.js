@@ -27,7 +27,7 @@ const Projects = ({ data }) => {
 				title={headlineModuleData.title}
 			/>
 			<div className={style.projectsContainer}>
-				<ImageModule
+				{/* <ImageModule
 					image={imageModuleData[0].Image}
 					text={imageModuleData[0].Text}
 				/>
@@ -43,7 +43,7 @@ const Projects = ({ data }) => {
 						GitHub.{' '}
 					</a>
 					This project was built by using React.js.
-				</p>
+				</p> */}
 				<ImageModule
 					image={imageModuleData[1].Image}
 					text={imageModuleData[1].Text}
