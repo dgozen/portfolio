@@ -27,23 +27,6 @@ const Projects = ({ data }) => {
 				title={headlineModuleData.title}
 			/>
 			<div className={style.projectsContainer}>
-				{/* <ImageModule
-					image={imageModuleData[0].Image}
-					text={imageModuleData[0].Text}
-				/>
-				<p>
-					An innovative timeline feature for Global Resilience Partnership's new
-					website. You can see the live desktop version{' '}
-					<a target='_blank' href='https://grp-timeline.now.sh/'>
-						here
-					</a>{' '}
-					and the code base on
-					<a target='_blank' href='https://github.com/dgozen/GRPtimeline'>
-						{' '}
-						GitHub.{' '}
-					</a>
-					This project was built by using React.js.
-				</p> */}
 				<ImageModule
 					image={imageModuleData[1].Image}
 					text={imageModuleData[1].Text}
@@ -69,6 +52,23 @@ const Projects = ({ data }) => {
 						live link{' '}
 					</a>
 					to the prototype.
+				</p>
+				<ImageModule
+					image={imageModuleData[0].Image}
+					text={imageModuleData[0].Text}
+				/>
+				<p>
+					An innovative timeline feature for Global Resilience Partnership's new
+					website. You can see the live desktop version{' '}
+					<a target='_blank' href='https://grp-timeline.now.sh/'>
+						here
+					</a>{' '}
+					and the code base on
+					<a target='_blank' href='https://github.com/dgozen/GRPtimeline'>
+						{' '}
+						GitHub.{' '}
+					</a>
+					This project was built by using React.js.
 				</p>
 				<ImageModule
 					image={imageModuleData[2].Image}
