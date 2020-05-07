@@ -90,16 +90,16 @@ const Projects = ({ data }) => {
 					.
 				</p>
 				<ImageModule
-					image={imageModuleData[3].Image}
-					text={imageModuleData[3].Text}
+					image={imageModuleData[4].Image}
+					text={imageModuleData[4].Text}
 				/>
 				<p>
 					A design system created for WWT's (We Were There) landing page to help
 					deliever their message and increase conversion rate.
 				</p>
 				<ImageModule
-					image={imageModuleData[4].Image}
-					text={imageModuleData[4].Text}
+					image={imageModuleData[3].Image}
+					text={imageModuleData[3].Text}
 				/>
 				<p>
 					This website's technology uses a headless CMS system from Storyblok
