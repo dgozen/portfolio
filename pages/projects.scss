@@ -9,6 +9,7 @@
 		color: $color-header;
 		padding-top: 20vh;
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+		margin-bottom: 5vw;
 	}
 }
 .projectsContainer {
@@ -26,7 +27,13 @@
 		-moz-box-shadow: 6px 7px 18px 0px rgba(94, 89, 89, 1);
 		box-shadow: 6px 7px 18px 0px rgba(94, 89, 89, 1);
 		border-radius: 20px;
-		width: 60vw;
+		width: 80vw;
+		margin: 3vw;
+	}
+
+	.calendar {
+		width: 30vw;
+		margin: 3vw;
 	}
 
 	p {
