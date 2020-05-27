@@ -31,8 +31,7 @@
 		margin: 3vw;
 	}
 
-	.calendar:first-child,
-	#calendar {
+	div:nth-child(3) {
 		width: 30vw;
 		margin: 3vw;
 	}
@@ -67,8 +66,7 @@
 			width: 50vw;
 		}
 
-		.calendar:first-child,
-		#calendar {
+		div:nth-child(3) {
 			width: 20vw;
 			border-radius: 3vw;
 		}
