@@ -15,10 +15,6 @@ const Projects = ({ data }) => {
 	const headlineModuleData = content.body.find(
 		(item) => item.component === 'Headline'
 	);
-	const imageModuleData = content.body.filter((item) =>
-		item.component.includes('Image')
-	);
-
 	return (
 		<div className={style.header}>
 			<Head title={title} description={description} />
@@ -27,10 +23,26 @@ const Projects = ({ data }) => {
 				title={headlineModuleData.title}
 			/>
 			<div className={style.projectsContainer}>
-				<ImageModule
-					image={imageModuleData[1].Image}
-					text={imageModuleData[1].Text}
+				<img
+					src='grp.png'
+					alt='Global Resilience
+				Partnership timeline'
 				/>
+				<p>
+					An innovative timeline feature created for Global Resilience
+					Partnership's new website. You can see the live desktop version{' '}
+					<a target='_blank' href='https://grp-timeline.now.sh/'>
+						{' '}
+						here{' '}
+					</a>{' '}
+					and the code base on
+					<a target='_blank' href='https://github.com/dgozen/GRPtimeline'>
+						{' '}
+						GitHub.{' '}
+					</a>
+					This project was built by using React.js.
+				</p>
+				<img id='calendar' src='calendar.png' alt='Mobile Gym App' />
 				<p>
 					An accessible gym web app built on React.js for mobile display. UI was
 					designed for motor function disabilities and dyslexia. Screen readers
@@ -40,7 +52,7 @@ const Projects = ({ data }) => {
 						target='_blank'
 						href='https://www.figma.com/file/tc4FJrHbhwDBtX8Y1SwWV7/Friskis-and-Svettis?node-id=0%3A1'
 					>
-						Figma
+						Figma{' '}
 					</a>{' '}
 					and the code base on
 					<a target='_blank' href='https://github.com/dgozen/FriskisSvettisApp'>
@@ -54,53 +66,28 @@ const Projects = ({ data }) => {
 					</a>
 					to the prototype.
 				</p>
-				<ImageModule
-					image={imageModuleData[0].Image}
-					text={imageModuleData[0].Text}
-				/>
+
+				<img src='quotey.png' alt='JavaScript Game' />
 				<p>
-					An innovative timeline feature created for Global Resilience
-					Partnership's new website. You can see the live desktop version{' '}
-					<a target='_blank' href='https://grp-timeline.now.sh/'>
-						here
-					</a>{' '}
-					and the code base on
-					<a target='_blank' href='https://github.com/dgozen/GRPtimeline'>
+					A small JavaScript Vanilla game that makes it possible to chat as
+					specific character's voices using websockets for multiple players. You
+					can play the game live{' '}
+					<a target='_blank' href='https://dgozen-quotey.glitch.me/'>
 						{' '}
-						GitHub.{' '}
-					</a>
-					This project was built by using React.js.
-				</p>
-				<ImageModule
-					image={imageModuleData[2].Image}
-					text={imageModuleData[2].Text}
-				/>
-				<p>
-					A small jump scare game built on JavaScript. You can play it live on
-					your desktop{' '}
-					<a target='_blank' href='https://mazewoman.netlify.com/'>
-						{' '}
-						here
+						here{' '}
 					</a>{' '}
 					or take a look at the code in
-					<a target='_blank' href='https://github.com/dgozen/mazeWoman'>
+					<a target='_blank' href='https://github.com/dgozen/quotey'>
 						{' '}
 						GitHub
 					</a>
-					.
 				</p>
-				<ImageModule
-					image={imageModuleData[4].Image}
-					text={imageModuleData[4].Text}
-				/>
+				<img src='design.png' alt='WWT Design System' />
 				<p>
 					A design system created for WWT's (We Were There) landing page to help
 					deliever their message and increase conversion rate.
 				</p>
-				<ImageModule
-					image={imageModuleData[3].Image}
-					text={imageModuleData[3].Text}
-				/>
+				<img src='portfolio.png' alt='portfolio' />
 				<p>
 					This website's technology uses a headless CMS system from Storyblok
 					and Next.js.
