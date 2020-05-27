@@ -2,6 +2,7 @@ import fetch from 'isomorphic-unfetch';
 import style from './projects.scss';
 import Head from '../components/common/Head/index';
 import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
+import quotey from '../images/quotey.png';
 
 function fetchUrl(url) {
 	return fetch(url).then((r) => r.json());
@@ -41,7 +42,11 @@ const Projects = ({ data }) => {
 					</a>
 					This project was built by using React.js.
 				</p>
-				<img id='calendar' src='/images/calender.png' alt='Mobile Gym App' />
+				<img
+					id='calendar'
+					src={require('../images/calendar.png')}
+					alt='Mobile Gym App'
+				/>
 				<p>
 					An accessible gym web app built on React.js for mobile display. UI was
 					designed for motor function disabilities and dyslexia. Screen readers
@@ -66,7 +71,7 @@ const Projects = ({ data }) => {
 					to the prototype.
 				</p>
 
-				<img src='/images/quotey.png' alt='JavaScript Game' />
+				<img src={quotey} alt='JavaScript Game' />
 				<p>
 					A small JavaScript Vanilla game that makes it possible to chat as
 					specific character's voices using websockets for multiple players. You
@@ -86,7 +91,7 @@ const Projects = ({ data }) => {
 					A design system created for WWT's (We Were There) landing page to help
 					deliever their message and increase conversion rate.
 				</p>
-				<img src='/images/portfolio.png' alt='portfolio' />
+				<img src='../images/portfolio.png' alt='portfolio' />
 				<p>
 					This website's technology uses a headless CMS system from Storyblok
 					and Next.js.
