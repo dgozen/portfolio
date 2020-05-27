@@ -77,9 +77,9 @@ const Projects = ({ data }) => {
 					text={imageModuleData[2].Text}
 				/>
 				<p>
-					A small JavaScript Vanilla game that makes it possible to chat as
-					specific character's voices using websockets for multiple players. You
-					can play the game live{' '}
+					A JavaScript Vanilla game that uses websockets to chat through known
+					characters' voices. It is possible to play as a single player or as
+					multi players. You can play the game live{' '}
 					<a target='_blank' href='https://dgozen-quotey.glitch.me/'>
 						{' '}
 						here{' '}
@@ -103,8 +103,8 @@ const Projects = ({ data }) => {
 					text={imageModuleData[4].Text}
 				/>
 				<p>
-					This website's technology uses a headless CMS system from Storyblok
-					and Next.js.
+					This website's own technology uses a headless CMS system from
+					Storyblok, React.js and Next.js.
 				</p>
 			</div>
 		</div>
