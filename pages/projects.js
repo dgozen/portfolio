@@ -44,12 +44,11 @@ const Projects = ({ data }) => {
 					</a>
 					This project was built by using React.js.
 				</p>
-				<div className={style.calendar}>
-					<ImageModule
-						image={imageModuleData[1].Image}
-						text={imageModuleData[1].Text}
-					/>
-				</div>
+				<ImageModule
+					image={imageModuleData[1].Image}
+					text={imageModuleData[1].Text}
+					id='calendar'
+				/>
 				<p>
 					An accessible gym web app built on React.js for mobile display. UI was
 					designed for motor function disabilities and dyslexia. Screen readers
