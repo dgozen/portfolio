@@ -15,6 +15,9 @@ const Projects = ({ data }) => {
 	const headlineModuleData = content.body.find(
 		(item) => item.component === 'Headline'
 	);
+	const imageModuleData = content.body.filter((item) =>
+		item.component.includes('Image')
+	);
 	return (
 		<div className={style.header}>
 			<Head title={title} description={description} />
