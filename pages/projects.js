@@ -2,11 +2,6 @@ import fetch from 'isomorphic-unfetch';
 import style from './projects.scss';
 import Head from '../components/common/Head/index';
 import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
-import Calendar from '../images/calendar.png';
-import Design from '../images/design.png';
-import Grp from '../images/grp.png';
-import Portfolio from '../images/portfolio.png';
-import Quotey from '../images/quotey.png';
 
 function fetchUrl(url) {
 	return fetch(url).then((r) => r.json());
@@ -28,7 +23,7 @@ const Projects = ({ data }) => {
 			/>
 			<div className={style.projectsContainer}>
 				<img
-					src={Grp}
+					src='/images/grp.png'
 					alt='Global Resilience
 				Partnership timeline'
 				/>
@@ -46,7 +41,7 @@ const Projects = ({ data }) => {
 					</a>
 					This project was built by using React.js.
 				</p>
-				<img id='calendar' src={Calendar} alt='Mobile Gym App' />
+				<img id='calendar' src='/images/calender.png' alt='Mobile Gym App' />
 				<p>
 					An accessible gym web app built on React.js for mobile display. UI was
 					designed for motor function disabilities and dyslexia. Screen readers
@@ -71,7 +66,7 @@ const Projects = ({ data }) => {
 					to the prototype.
 				</p>
 
-				<img src={Quotey} alt='JavaScript Game' />
+				<img src='/images/quotey.png' alt='JavaScript Game' />
 				<p>
 					A small JavaScript Vanilla game that makes it possible to chat as
 					specific character's voices using websockets for multiple players. You
@@ -86,12 +81,12 @@ const Projects = ({ data }) => {
 						GitHub
 					</a>
 				</p>
-				<img src={Design} alt='WWT Design System' />
+				<img src='/images/design.png' alt='WWT Design System' />
 				<p>
 					A design system created for WWT's (We Were There) landing page to help
 					deliever their message and increase conversion rate.
 				</p>
-				<img src={Portfolio} alt='portfolio' />
+				<img src='/images/portfolio.png' alt='portfolio' />
 				<p>
 					This website's technology uses a headless CMS system from Storyblok
 					and Next.js.
