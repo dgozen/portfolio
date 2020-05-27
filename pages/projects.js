@@ -2,7 +2,11 @@ import fetch from 'isomorphic-unfetch';
 import style from './projects.scss';
 import Head from '../components/common/Head/index';
 import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
-import ImageModule from '../components/modules/ImageModule/ImageModule';
+import Calendar from '../pictures/calendar.png';
+import Design from '../pictures/design.png';
+import Grp from '../pictures/grp.png';
+import Portfolio from '../pictures/portfolio.png';
+import Quotey from '../pictures/quotey.png';
 
 function fetchUrl(url) {
 	return fetch(url).then((r) => r.json());
@@ -24,7 +28,7 @@ const Projects = ({ data }) => {
 			/>
 			<div className={style.projectsContainer}>
 				<img
-					src='../pictures/calendar.png'
+					src={Grp}
 					alt='Global Resilience
 				Partnership timeline'
 				/>
@@ -42,7 +46,7 @@ const Projects = ({ data }) => {
 					</a>
 					This project was built by using React.js.
 				</p>
-				<img id='calendar' src='calendar.png' alt='Mobile Gym App' />
+				<img id='calendar' src={Calendar} alt='Mobile Gym App' />
 				<p>
 					An accessible gym web app built on React.js for mobile display. UI was
 					designed for motor function disabilities and dyslexia. Screen readers
@@ -67,7 +71,7 @@ const Projects = ({ data }) => {
 					to the prototype.
 				</p>
 
-				<img src='quotey.png' alt='JavaScript Game' />
+				<img src={Quotey} alt='JavaScript Game' />
 				<p>
 					A small JavaScript Vanilla game that makes it possible to chat as
 					specific character's voices using websockets for multiple players. You
@@ -82,12 +86,12 @@ const Projects = ({ data }) => {
 						GitHub
 					</a>
 				</p>
-				<img src='/design.png' alt='WWT Design System' />
+				<img src={Design} alt='WWT Design System' />
 				<p>
 					A design system created for WWT's (We Were There) landing page to help
 					deliever their message and increase conversion rate.
 				</p>
-				<img src='/portfolio.png' alt='portfolio' />
+				<img src={Portfolio} alt='portfolio' />
 				<p>
 					This website's technology uses a headless CMS system from Storyblok
 					and Next.js.
