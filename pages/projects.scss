@@ -31,7 +31,7 @@
 		margin: 3vw;
 	}
 
-	.calendar {
+	.calendar:first-child {
 		width: 30vw;
 		margin: 3vw;
 	}
@@ -54,11 +54,11 @@
 	}
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 700px) {
 	.projectsContainer {
 		display: grid;
 		grid-template-rows: repeat(5, 1fr);
-		grid-template-columns: 60% auto;
+		grid-template-columns: auto auto;
 		justify-items: center;
 		justify-content: center;
 
