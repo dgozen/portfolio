@@ -24,7 +24,7 @@ const Projects = ({ data }) => {
 			/>
 			<div className={style.projectsContainer}>
 				<img
-					src='grp.png'
+					src='../pictures/calendar.png'
 					alt='Global Resilience
 				Partnership timeline'
 				/>
@@ -82,12 +82,12 @@ const Projects = ({ data }) => {
 						GitHub
 					</a>
 				</p>
-				<img src='design.png' alt='WWT Design System' />
+				<img src='/design.png' alt='WWT Design System' />
 				<p>
 					A design system created for WWT's (We Were There) landing page to help
 					deliever their message and increase conversion rate.
 				</p>
-				<img src='portfolio.png' alt='portfolio' />
+				<img src='/portfolio.png' alt='portfolio' />
 				<p>
 					This website's technology uses a headless CMS system from Storyblok
 					and Next.js.
