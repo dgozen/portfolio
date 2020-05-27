@@ -2,11 +2,11 @@ import fetch from 'isomorphic-unfetch';
 import style from './projects.scss';
 import Head from '../components/common/Head/index';
 import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
-import Calendar from '../pictures/calendar.png';
-import Design from '../pictures/design.png';
-import Grp from '../pictures/grp.png';
-import Portfolio from '../pictures/portfolio.png';
-import Quotey from '../pictures/quotey.png';
+import Calendar from '../images/calendar.png';
+import Design from '../images/design.png';
+import Grp from '../images/grp.png';
+import Portfolio from '../images/portfolio.png';
+import Quotey from '../images/quotey.png';
 
 function fetchUrl(url) {
 	return fetch(url).then((r) => r.json());
