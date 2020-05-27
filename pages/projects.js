@@ -2,7 +2,7 @@ import fetch from 'isomorphic-unfetch';
 import style from './projects.scss';
 import Head from '../components/common/Head/index';
 import HeadlineModule from '../components/modules/HeadlineModule/HeadlineModule';
-import quotey from '../images/quotey.png';
+import ImageModule from '../components/modules/ImageModule/ImageModule';
 
 function fetchUrl(url) {
 	return fetch(url).then((r) => r.json());
@@ -23,10 +23,9 @@ const Projects = ({ data }) => {
 				title={headlineModuleData.title}
 			/>
 			<div className={style.projectsContainer}>
-				<img
-					src='/images/grp.png'
-					alt='Global Resilience
-				Partnership timeline'
+				<ImageModule
+					image={imageModuleData[0].Image}
+					text={imageModuleData[0].Text}
 				/>
 				<p>
 					An innovative timeline feature created for Global Resilience
@@ -42,11 +41,12 @@ const Projects = ({ data }) => {
 					</a>
 					This project was built by using React.js.
 				</p>
-				<img
-					id='calendar'
-					src={require('../images/calendar.png')}
-					alt='Mobile Gym App'
-				/>
+				<div className={style.calendar}>
+					<ImageModule
+						image={imageModuleData[1].Image}
+						text={imageModuleData[1].Text}
+					/>
+				</div>
 				<p>
 					An accessible gym web app built on React.js for mobile display. UI was
 					designed for motor function disabilities and dyslexia. Screen readers
@@ -70,8 +70,10 @@ const Projects = ({ data }) => {
 					</a>
 					to the prototype.
 				</p>
-
-				<img src={quotey} alt='JavaScript Game' />
+				<ImageModule
+					image={imageModuleData[2].Image}
+					text={imageModuleData[2].Text}
+				/>
 				<p>
 					A small JavaScript Vanilla game that makes it possible to chat as
 					specific character's voices using websockets for multiple players. You
@@ -86,12 +88,18 @@ const Projects = ({ data }) => {
 						GitHub
 					</a>
 				</p>
-				<img src='/images/design.png' alt='WWT Design System' />
+				<ImageModule
+					image={imageModuleData[3].Image}
+					text={imageModuleData[3].Text}
+				/>
 				<p>
 					A design system created for WWT's (We Were There) landing page to help
 					deliever their message and increase conversion rate.
 				</p>
-				<img src='../images/portfolio.png' alt='portfolio' />
+				<ImageModule
+					image={imageModuleData[4].Image}
+					text={imageModuleData[4].Text}
+				/>
 				<p>
 					This website's technology uses a headless CMS system from Storyblok
 					and Next.js.
